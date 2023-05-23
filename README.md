@@ -1,3 +1,9 @@
+## Note
+- Fixed all build errors for no-python build 
+- Tested on Arch Linux (May 2023)
+- build command: `NO_PYTHON_I_KNOW_WHAT_I_AM_DOING_I_SWEAR=1 BUILD64=1 LINK=STATIC ./build.sh`
+
+---
 # DARPA Challenge Binaries on Linux, OS X, and Windows
 
 [![Build Status](https://img.shields.io/github/workflow/status/trailofbits/cb-multios/CI/master)](https://github.com/trailofbits/cb-multios/actions?query=workflow%3ACI)
