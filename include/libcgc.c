@@ -227,7 +227,7 @@ int cgc_random(void *buf, cgc_size_t count, cgc_size_t *rnd_bytes) {
 }
 
 static void __attribute__ ((constructor)) cgc_initialize_flag_page(void) {
-  void *mmap_addr = mmap(CGC_FLAG_PAGE_ADDRESS, PAGE_SIZE,
+  void *mmap_addr = mmap((int*) CGC_FLAG_PAGE_ADDRESS, PAGE_SIZE,
                          PROT_READ | PROT_WRITE,
                          MAP_FIXED | MAP_PRIVATE | MAP_ANONYMOUS,
                          -1, 0);

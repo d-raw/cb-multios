@@ -287,7 +287,7 @@ int do_mix(cgc_state_t *state, pkt_t *pkt)
 
 static unsigned int do_hash(const unsigned char *_data, unsigned int len)
 {
-    unsigned char *data = malloc(len);
+    unsigned char *data = (char*) malloc(len);
     unsigned int i, hash = 0, xform = 0x12345678;
 
     cgc_memcpy(data, _data, len);
