@@ -126,7 +126,7 @@ static void cgc_my_to_lower(char *s)
 
 static void cgc_my_strcpy(char *dst, const char *src)
 {
-    cgc_size_t length = CALL(STRLEN, src);
+    cgc_size_t length = CALL(STRLEN, (uintptr_t) src);
     CALL(MEMCPY, dst, src, length + 1);
 }
 
