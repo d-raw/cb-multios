@@ -14,7 +14,8 @@ TOOLS_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(TOOLS_DIR)
 CHAL_DIR = os.path.join(ROOT, 'challenges')
 POLL_DIR = os.path.join(ROOT, 'polls')
-BUILD_DIR = os.path.join(ROOT, 'build', 'challenges')
+# BUILD_DIR = os.path.join(ROOT, 'build', 'challenges')
+BUILD_DIR = os.path.join(ROOT, 'build64', 'challenges')
 
 IS_WINDOWS = sys.platform == 'win32'
 
@@ -83,7 +84,7 @@ class Tester:
         # If the test failed to run, consider it failed
         if 'TOTAL TESTS' not in output:
             debug('\nWARNING: there was an error running a test')
-            print output
+            print(output)
             return 0, 0
 
         if 'timed out' in output:

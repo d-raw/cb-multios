@@ -1,6 +1,6 @@
 import os
 import sys
-import thread
+# import thread
 import threading
 
 # For OS specific tasks

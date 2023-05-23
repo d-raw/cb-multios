@@ -2,6 +2,8 @@
 - Fixed all build errors for no-python build 
 - Tested on Arch Linux (May 2023)
 - build command: `NO_PYTHON_I_KNOW_WHAT_I_AM_DOING_I_SWEAR=1 BUILD64=1 LINK=STATIC ./build.sh`
+- to build with python, first install `xlsxwriter` and `pycrptodome` and then build with `BUILD64=1 LINK=STATIC ./build.sh`
+- python scripts in the `tools` dir are written in python2, not working yet
 
 ---
 # DARPA Challenge Binaries on Linux, OS X, and Windows

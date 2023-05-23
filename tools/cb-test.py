@@ -37,9 +37,9 @@ import signal
 import subprocess
 import sys
 import time
-import thread
+# import thread
 import threading
-import Queue
+import queue
 import ansi_x931_aes128
 
 from common import IS_WINDOWS
